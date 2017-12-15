@@ -1,0 +1,70 @@
+package model;
+
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import java.util.List;
+
+
+/**
+ * The persistent class for the livraison database table.
+ * 
+ */
+@Entity
+@NamedQuery(name="Livraison.findAll", query="SELECT l FROM Livraison l")
+public class Livraison implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	//bi-directional one-to-one association to Commande
+	@OneToOne(mappedBy="livraison")
+	private Commande commande;
+
+	//bi-directional many-to-one association to LigneLivraison
+	@OneToMany(mappedBy="livraison")
+	private List<LigneLivraison> ligneLivraisons;
+
+	public Livraison() {
+	}
+
+	public Commande getCommande() {
+		return this.commande;
+	}
+
+	public void setCommande(Commande commande) {
+		this.commande = commande;
+	}
+
+	public List<LigneLivraison> getLigneLivraisons() {
+		return this.ligneLivraisons;
+	}
+
+	public void setLigneLivraisons(List<LigneLivraison> ligneLivraisons) {
+		this.ligneLivraisons = ligneLivraisons;
+	}
+
+	public LigneLivraison addLigneLivraison(LigneLivraison ligneLivraison) {
+		getLigneLivraisons().add(ligneLivraison);
+		ligneLivraison.setLivraison(this);
+
+		return ligneLivraison;
+	}
+
+	public LigneLivraison removeLigneLivraison(LigneLivraison ligneLivraison) {
+		getLigneLivraisons().remove(ligneLivraison);
+		ligneLivraison.setLivraison(null);
+
+		return ligneLivraison;
+	}
+
+}

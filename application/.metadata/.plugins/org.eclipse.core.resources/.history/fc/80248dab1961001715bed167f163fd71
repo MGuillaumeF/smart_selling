@@ -1,0 +1,92 @@
+package model;
+
+import java.io.Serializable;
+import javax.persistence.*;
+
+
+/**
+ * The persistent class for the produit database table.
+ * 
+ */
+@Entity
+@NamedQuery(name="Produit.findAll", query="SELECT p FROM Produit p")
+public class Produit implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id_produit")
+	private Integer idProduit;
+
+	private Byte actif;
+
+	private String description;
+
+	private String designation;
+
+	private Float prix;
+
+	private String reference;
+
+	private Integer stock;
+
+	public Produit() {
+	}
+
+	public Integer getIdProduit() {
+		return this.idProduit;
+	}
+
+	public void setIdProduit(Integer idProduit) {
+		this.idProduit = idProduit;
+	}
+
+	public Byte getActif() {
+		return this.actif;
+	}
+
+	public void setActif(Byte actif) {
+		this.actif = actif;
+	}
+
+	public String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getDesignation() {
+		return this.designation;
+	}
+
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+
+	public Float getPrix() {
+		return this.prix;
+	}
+
+	public void setPrix(Float prix) {
+		this.prix = prix;
+	}
+
+	public String getReference() {
+		return this.reference;
+	}
+
+	public void setReference(String reference) {
+		this.reference = reference;
+	}
+
+	public Integer getStock() {
+		return this.stock;
+	}
+
+	public void setStock(Integer stock) {
+		this.stock = stock;
+	}
+
+}

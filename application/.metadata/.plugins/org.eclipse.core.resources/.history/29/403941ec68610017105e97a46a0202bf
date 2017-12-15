@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="smart_selling_connect" transaction-type="JTA">
+		<jta-data-source>java:jboss/datasources/Smart_SellingDS</jta-data-source>
+		<class>model.Role</class>
+		<class>model.Utilisateur</class>
+		<class>model.Client</class>
+		<class>model.Commande</class>
+		<class>model.LigneCommande</class>
+		<class>model.LigneLivraison</class>
+		<class>model.Livraison</class>
+		<class>model.Paiement</class>
+		<class>model.Produit</class>
+      <properties>
+         <!-- pour voir les requetes SQL -->
+         <property name="hibernate.show_sql" value="true" />
+         <property name="hibernate.format_sql" value="true" />
+
+         <!-- parametres de connection JDBC -->
+         <property name="jboss.entity.manager.jndi.name" 
+				value="java:jboss/persistenceunit/MyEntityManager"/>
+			<property name="jboss.entity.manager.factory.jndi.name" 
+				value="java:jboss/persistenceunit/MyEntityManagerFactory"/>
+      </properties>
+   </persistence-unit>
+</persistence>

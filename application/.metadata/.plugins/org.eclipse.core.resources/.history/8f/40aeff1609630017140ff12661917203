@@ -1,0 +1,67 @@
+package bean;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.Date;
+
+
+/**
+ * The persistent class for the ligne_livraison database table.
+ * 
+ */
+@Entity
+@Table(name="ligne_livraison")
+@NamedQuery(name="LigneLivraison.findAll", query="SELECT l FROM LigneLivraison l")
+public class LigneLivraison implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name="id_ligne_livraison")
+	private int idLigneLivraison;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name="date_envoi")
+	private Date dateEnvoi;
+
+	@Column(name="id_ligne_commande")
+	private int idLigneCommande;
+
+	@Column(name="id_livraison")
+	private int idLivraison;
+
+	public LigneLivraison() {
+	}
+
+	public int getIdLigneLivraison() {
+		return this.idLigneLivraison;
+	}
+
+	public void setIdLigneLivraison(int idLigneLivraison) {
+		this.idLigneLivraison = idLigneLivraison;
+	}
+
+	public Date getDateEnvoi() {
+		return this.dateEnvoi;
+	}
+
+	public void setDateEnvoi(Date dateEnvoi) {
+		this.dateEnvoi = dateEnvoi;
+	}
+
+	public int getIdLigneCommande() {
+		return this.idLigneCommande;
+	}
+
+	public void setIdLigneCommande(int idLigneCommande) {
+		this.idLigneCommande = idLigneCommande;
+	}
+
+	public int getIdLivraison() {
+		return this.idLivraison;
+	}
+
+	public void setIdLivraison(int idLivraison) {
+		this.idLivraison = idLivraison;
+	}
+
+}

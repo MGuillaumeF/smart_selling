@@ -1,0 +1,200 @@
+package bean;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.ejb.EJBContext;
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
+import javax.json.Json;
+import javax.json.JsonArray;
+import javax.json.JsonArrayBuilder;
+import javax.json.JsonObject;
+import javax.naming.InitialContext;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+import javax.transaction.UserTransaction;
+
+
+import javax.inject.Inject; 
+
+
+
+import model.Client;
+import model.Produit;
+
+/**
+ * Session Bean implementation class CommercialSessionBean
+ */
+@Stateless
+@TransactionManagement(TransactionManagementType.BEAN)
+public class CommercialSessionBean {
+	@PersistenceContext(name="CommercialEJB")
+	private EntityManagerFactory entityManagerFactory = null;
+	private EntityManager entityManager = null;
+    /**
+     * Default constructor. 
+     */
+    public CommercialSessionBean() {
+        // TODO Auto-generated constructor stub
+    }
+    @Resource
+    UserTransaction userTransaction;
+    public void init() {
+    	entityManagerFactory = Persistence.createEntityManagerFactory("smart_selling_connect");
+    	entityManager = entityManagerFactory.createEntityManager();
+    }
+    public void close() {
+    	if (entityManager != null) {
+        	entityManager.close();
+        	entityManager = null;
+    	}
+    	if (entityManagerFactory != null) {
+        	entityManagerFactory.close();
+        	entityManagerFactory = null;
+    	}
+    }
+    public String printAllManufacturers(String email, String motDePasse) {  
+    	/*EntityManager entityManager = null;
+    	System.out.println("In SessionBean Connexion.java");
+    	Role role = null;
+    	try {
+    		entityManager = entityManagerFactory.createEntityManager();
+	    	TypedQuery<Utilisateur> query = (TypedQuery<Utilisateur>) entityManager.createQuery("FROM Utilisateur WHERE identifiant=:email AND mot_de_passe=:motDePasse AND actif=1", Utilisateur.class);
+	    	query.setParameter( "email", email );
+	    	query.setParameter( "motDePasse", motDePasse );
+	    	
+	    	
+	    	List<Utilisateur> result = query.getResultList(); 
+	    	for( Utilisateur u : result ){
+				role = u.getRole();    			
+		     }
+	        System.out.println(result.toString());
+    	} catch (Exception e) {
+    		System.out.println(e);
+    	} finally {
+  	      if (entityManager != null) {
+  	    	entityManager.close();
+ 	      }
+ 	   	}
+    	if (role != null) {
+    		return role.getNom();
+    	} else {
+    		return null;
+    	}*/
+    	return null;
+    }
+    public String getAllProducts () {
+    	System.out.println("In SessionBean Connexion.java");
+    	JsonArrayBuilder jsonArrayBuilder = null;
+    	JsonArray jsonArray = null;
+    	try {
+	    	TypedQuery<Produit> query = (TypedQuery<Produit>) entityManager.createQuery("FROM Produit WHERE actif=1", Produit.class);
+	    	
+	    	List<Produit> result = query.getResultList();
+	    	jsonArrayBuilder = Json.createArrayBuilder();
+	    	for( Produit u : result ){
+	    		jsonArrayBuilder.add(Json.createObjectBuilder()
+	        					.add("id", u.getIdProduit())
+	        					.add("reference", u.getReference())
+	        					.add("designation", u.getDesignation())
+	        					.add("description", u.getDescription())
+	        					.add("stock", u.getStock())
+	        					.add("prix", u.getPrix())
+	        					);
+	        			   			
+		     }
+	    	jsonArray = jsonArrayBuilder.build();
+    	} catch (Exception e) {
+    		System.out.println(e);
+    	}
+    	if (jsonArray != null) {
+    		return jsonArray.toString();
+    	} else {
+    		return null;
+    	}
+    }
+    public String getAllClients () {
+    	JsonArrayBuilder jsonArrayBuilder = null;
+    	JsonArray jsonArray = null;
+    	try {
+	    	TypedQuery<Client> query = (TypedQuery<Client>) entityManager.createQuery("FROM Client WHERE actif=1", Client.class);
+	    	
+	    	List<Client> result = query.getResultList();
+	    	jsonArrayBuilder = Json.createArrayBuilder();
+	    	for( Client u : result ){
+	    		jsonArrayBuilder.add(Json.createObjectBuilder()
+	        					.add("id", u.getIdClient())
+	        					.add("nom", u.getNom())
+	        					.add("prenom", u.getPrenom())
+	        					.add("societe", u.getSociete())
+	        					.add("code_postal", u.getCodePostal())
+	        					.add("ville", u.getVille())
+	        					.add("pays", u.getPays())
+	        					.add("adresse", u.getAdresse())
+	        					);
+	        			   			
+		     }
+	    	jsonArray = jsonArrayBuilder.build();
+    	} catch (Exception e) {
+    		System.out.println(e);
+    	}
+    	if (jsonArray != null) {
+    		return jsonArray.toString();
+    	} else {
+    		return null;
+    	}
+    }
+    public String setClient (String nom, String prenom, String societe, String adresse, String codePostal, String ville, String pays, String email, String telephoneFixe, String telephoneMobile, Integer actif) {
+    	String result = null;
+    	try {
+        	
+        	Client client = new Client();
+        	
+        	client.setNom(nom);
+        	client.setPrenom(prenom);
+        	client.setSociete(societe);
+        	
+        	client.setAdresse(adresse);
+        	client.setCodePostal(codePostal);
+        	client.setVille(ville);
+        	client.setPays(pays);
+        	
+        	client.setEmail(email);
+        	client.setTelephoneFixe(telephoneFixe);
+        	client.setTelephoneMobile(telephoneMobile);
+        	
+        	client.setActif(actif);
+        	
+        	userTransaction.begin();
+        	entityManager.persist(client);
+        	entityManager.createQuery("INSERT INTO Client (nom, prenom, societe, adresse, codePostal, ville, pays, email, telephoneFixe, telephoneMobile, actif) ").executeUpdate();
+  			
+  			userTransaction.commit();
+	    	
+        	/*JsonObject json = Json.createObjectBuilder()
+    				.add("status", "ok")
+    			    .add("n", "1").build();*/
+  			JsonObject json = Json.createObjectBuilder()
+    				.add("status", "ko")
+    			    .add("n", "")
+    			    .add("errMessage", "test")
+    			    .build();
+        	result = json.toString();
+    	} catch (Exception e) {
+    		JsonObject json = Json.createObjectBuilder()
+    				.add("status", "ko")
+    			    .add("n", "")
+    			    .add("errMessage", e.toString())
+    			    .build();
+    		result = json.toString();
+    	}
+    	
+    	return result;
+    }
+}

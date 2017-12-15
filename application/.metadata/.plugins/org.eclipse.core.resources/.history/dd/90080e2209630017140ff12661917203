@@ -1,0 +1,103 @@
+package bean;
+
+import java.io.Serializable;
+import javax.persistence.*;
+
+
+/**
+ * The persistent class for the livraison database table.
+ * 
+ */
+@Entity
+@NamedQuery(name="Livraison.findAll", query="SELECT l FROM Livraison l")
+public class Livraison implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name="id_livraison")
+	private int idLivraison;
+
+	private String adresse;
+
+	@Column(name="code_postal")
+	private String codePostal;
+
+	@Column(name="id_commande")
+	private int idCommande;
+
+	private String nom;
+
+	private String pays;
+
+	private String prenom;
+
+	private String ville;
+
+	public Livraison() {
+	}
+
+	public int getIdLivraison() {
+		return this.idLivraison;
+	}
+
+	public void setIdLivraison(int idLivraison) {
+		this.idLivraison = idLivraison;
+	}
+
+	public String getAdresse() {
+		return this.adresse;
+	}
+
+	public void setAdresse(String adresse) {
+		this.adresse = adresse;
+	}
+
+	public String getCodePostal() {
+		return this.codePostal;
+	}
+
+	public void setCodePostal(String codePostal) {
+		this.codePostal = codePostal;
+	}
+
+	public int getIdCommande() {
+		return this.idCommande;
+	}
+
+	public void setIdCommande(int idCommande) {
+		this.idCommande = idCommande;
+	}
+
+	public String getNom() {
+		return this.nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPays() {
+		return this.pays;
+	}
+
+	public void setPays(String pays) {
+		this.pays = pays;
+	}
+
+	public String getPrenom() {
+		return this.prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public String getVille() {
+		return this.ville;
+	}
+
+	public void setVille(String ville) {
+		this.ville = ville;
+	}
+
+}

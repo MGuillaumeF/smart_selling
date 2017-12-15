@@ -1,0 +1,64 @@
+package bean;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.Date;
+
+
+/**
+ * The persistent class for the paiement database table.
+ * 
+ */
+@Entity
+@NamedQuery(name="Paiement.findAll", query="SELECT p FROM Paiement p")
+public class Paiement implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name="id_paiement")
+	private int idPaiement;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date date;
+
+	@Column(name="id_commande")
+	private int idCommande;
+
+	private float prixTTC;
+
+	public Paiement() {
+	}
+
+	public int getIdPaiement() {
+		return this.idPaiement;
+	}
+
+	public void setIdPaiement(int idPaiement) {
+		this.idPaiement = idPaiement;
+	}
+
+	public Date getDate() {
+		return this.date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public int getIdCommande() {
+		return this.idCommande;
+	}
+
+	public void setIdCommande(int idCommande) {
+		this.idCommande = idCommande;
+	}
+
+	public float getPrixTTC() {
+		return this.prixTTC;
+	}
+
+	public void setPrixTTC(float prixTTC) {
+		this.prixTTC = prixTTC;
+	}
+
+}

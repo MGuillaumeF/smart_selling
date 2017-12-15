@@ -1,0 +1,136 @@
+
+juil. 01, 2017 15:32:33.35 NEW SESSION
+juil. 01, 2017 15:32:33.35 1498915953356	addons.xpi	WARN	Add-on web2pdfextension@web2pdf.adobedotcom is not correctly signed.
+juil. 01, 2017 15:32:33.86 1498915953866	addons.repository	WARN	Search failed when repopulating cache
+juil. 01, 2017 15:32:36.79 [GPU 6708] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 01, 2017 15:32:41.35 [GPU 6708] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 01, 2017 15:32:41.37 [Child 6996] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 01, 2017 15:32:41.37 [Child 6996] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 01, 2017 15:32:41.73 
+juil. 01, 2017 15:32:41.73 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+juil. 01, 2017 15:32:41.73 
+
+juil. 03, 2017 20:19:42.74 NEW SESSION
+juil. 03, 2017 20:19:42.74 1499105982730	addons.xpi	WARN	Add-on web2pdfextension@web2pdf.adobedotcom is not correctly signed.
+juil. 03, 2017 20:19:45.47 [GPU 5928] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 03, 2017 20:19:51.92 [GPU 5928] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 03, 2017 20:28:16.53 1499106496548	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+juil. 03, 2017 20:28:16.55 1499106496566	addons.update-checker	WARN	Update manifest for aushelper@mozilla.org did not contain an updates property
+juil. 03, 2017 20:28:16.69 1499106496698	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+juil. 03, 2017 20:28:16.71 1499106496714	addons.update-checker	WARN	Update manifest for webcompat@mozilla.org did not contain an updates property
+juil. 03, 2017 20:28:16.72 1499106496732	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+juil. 03, 2017 20:30:15.36 *************************
+juil. 03, 2017 20:30:15.36 A coding exception was thrown and uncaught in a Task.
+juil. 03, 2017 20:30:15.36 
+juil. 03, 2017 20:30:15.36 Full message: TypeError: NetworkError when attempting to fetch resource.
+juil. 03, 2017 20:30:15.36 Full stack: loadFile@resource://gre/modules/services-common/blocklist-clients.js:119:30
+juil. 03, 2017 20:30:15.36 TaskImpl_run@resource://gre/modules/Task.jsm:319:42
+juil. 03, 2017 20:30:15.36 TaskImpl@resource://gre/modules/Task.jsm:277:3
+juil. 03, 2017 20:30:15.36 asyncFunction@resource://gre/modules/Task.jsm:252:14
+juil. 03, 2017 20:30:15.36 Task_spawn@resource://gre/modules/Task.jsm:166:12
+juil. 03, 2017 20:30:15.36 loadDumpFile@resource://gre/modules/services-common/blocklist-clients.js:118:12
+juil. 03, 2017 20:30:15.36 syncCollection@resource://gre/modules/services-common/blocklist-clients.js:212:39
+juil. 03, 2017 20:30:15.36 TaskImpl_run@resource://gre/modules/Task.jsm:319:42
+juil. 03, 2017 20:30:15.36 
+juil. 03, 2017 20:30:15.36 *************************
+juil. 03, 2017 20:30:16.11 1499106616122	addons.xpi	WARN	Add-on web2pdfextension@web2pdf.adobedotcom is not correctly signed.
+juil. 03, 2017 20:32:15.28 1499106735285	addons.xpi	WARN	Add-on web2pdfextension@web2pdf.adobedotcom is not correctly signed.
+juil. 03, 2017 20:41:29.89 [GPU 5928] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 03, 2017 20:43:50.86 [GPU 5928] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 03, 2017 22:23:53.10 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:55.53 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:55.71 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:55.74 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:55.91 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:55.96 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:56.20 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:56.28 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:56.33 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:56.48 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:56.49 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:56.79 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:56.80 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:56.90 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:56.92 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:56.93 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:57.75 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:57.93 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:58.11 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 22:23:58.18 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 23:52:21.51 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 23:52:21.77 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 23:52:22.09 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 23:52:22.11 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 23:52:22.13 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 23:52:22.35 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 23:52:22.41 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 23:52:22.46 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 23:52:22.68 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 03, 2017 23:53:58.13 [GPU 5928] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 03, 2017 23:53:59.85 [GPU 5928] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 03, 2017 23:53:59.85 [GPU 5928] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+juil. 04, 2017 23:30:42.88 NEW SESSION
+juil. 04, 2017 23:30:42.88 1499203842884	addons.xpi	WARN	Add-on web2pdfextension@web2pdf.adobedotcom is not correctly signed.
+juil. 04, 2017 23:30:43.21 1499203843217	addons.repository	WARN	Search failed when repopulating cache
+juil. 04, 2017 23:30:43.58 [GPU 8900] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 04, 2017 23:30:45.83 [GPU 8900] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 04, 2017 23:31:46.59 1499203906607	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+juil. 04, 2017 23:39:13.55 1499204353568	addons.repository	WARN	Search failed when repopulating cache
+juil. 04, 2017 23:39:13.65 1499204353666	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 04, 2017 23:39:13.65 1499204353666	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 04, 2017 23:39:13.65 1499204353667	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 04, 2017 23:39:13.65 1499204353668	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 04, 2017 23:39:13.66 1499204353668	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 04, 2017 23:39:13.66 1499204353669	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 04, 2017 23:39:13.66 1499204353669	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 04, 2017 23:39:13.66 1499204353669	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 04, 2017 23:39:13.66 1499204353670	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 04, 2017 23:39:13.66 1499204353670	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 04, 2017 23:39:13.67 1499204353674	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 04, 2017 23:39:13.67 1499204353678	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+juil. 04, 2017 23:39:13.68 1499204353682	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+juil. 04, 2017 23:39:13.68 1499204353683	addons.xpi	ERROR	Failed to download system add-on gmp-widevinecdm: Error: Failed downloading via XHR, status: 0, reason: error (resource://gre/modules/addons/ProductAddonChecker.jsm:319:16) JS Stack trace: fail@ProductAddonChecker.jsm:319:16
+juil. 04, 2017 23:39:13.68 1499204353684	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+juil. 04, 2017 23:39:13.68 1499204353684	addons.xpi	ERROR	Failed to download system add-on gmp-gmpopenh264: Error: Failed downloading via XHR, status: 0, reason: error (resource://gre/modules/addons/ProductAddonChecker.jsm:319:16) JS Stack trace: fail@ProductAddonChecker.jsm:319:16
+juil. 04, 2017 23:39:13.68 1499204353686	addons.manager	WARN	Failed to update system addons: Error: Rejecting updated system add-on set that either could not be downloaded or contained unusable add-ons. (resource://gre/modules/addons/XPIProvider.jsm:3217:13) JS Stack trace: this.XPIProvider.updateSystemAddons<@XPIProvider.jsm:3217:13
+juil. 04, 2017 23:41:13.61 *************************
+juil. 04, 2017 23:41:13.61 A coding exception was thrown and uncaught in a Task.
+juil. 04, 2017 23:41:13.61 
+juil. 04, 2017 23:41:13.61 Full message: TypeError: NetworkError when attempting to fetch resource.
+juil. 04, 2017 23:41:13.61 Full stack: 
+juil. 04, 2017 23:41:13.61 *************************
+
+juil. 05, 2017 10:03:52.86 NEW SESSION
+juil. 05, 2017 10:03:52.86 1499241832866	addons.xpi	WARN	Add-on web2pdfextension@web2pdf.adobedotcom is not correctly signed.
+juil. 05, 2017 10:03:53.91 1499241833917	addons.repository	WARN	Search failed when repopulating cache
+juil. 05, 2017 10:03:54.67 [GPU 2396] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 05, 2017 10:04:01.00 [GPU 2396] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+juil. 05, 2017 10:04:56.64 1499241896655	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+juil. 05, 2017 10:12:24.58 1499242344590	addons.repository	WARN	Search failed when repopulating cache
+juil. 05, 2017 10:12:24.65 1499242344667	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 05, 2017 10:12:24.65 1499242344667	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 05, 2017 10:12:24.65 1499242344668	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 05, 2017 10:12:24.65 1499242344669	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 05, 2017 10:12:24.65 1499242344669	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 05, 2017 10:12:24.65 1499242344670	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 05, 2017 10:12:24.65 1499242344671	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 05, 2017 10:12:24.65 1499242344672	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 05, 2017 10:12:24.65 1499242344672	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 05, 2017 10:12:24.65 1499242344673	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 05, 2017 10:12:24.67 1499242344676	addons.update-checker	WARN	HTTP Request failed for an unknown reason
+juil. 05, 2017 10:12:24.68 1499242344680	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+juil. 05, 2017 10:12:24.71 1499242344710	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+juil. 05, 2017 10:12:24.71 1499242344710	addons.xpi	ERROR	Failed to download system add-on gmp-gmpopenh264: Error: Failed downloading via XHR, status: 0, reason: error (resource://gre/modules/addons/ProductAddonChecker.jsm:319:16) JS Stack trace: fail@ProductAddonChecker.jsm:319:16
+juil. 05, 2017 10:12:24.71 1499242344711	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+juil. 05, 2017 10:12:24.71 1499242344712	addons.xpi	ERROR	Failed to download system add-on gmp-widevinecdm: Error: Failed downloading via XHR, status: 0, reason: error (resource://gre/modules/addons/ProductAddonChecker.jsm:319:16) JS Stack trace: fail@ProductAddonChecker.jsm:319:16
+juil. 05, 2017 10:12:24.71 1499242344713	addons.manager	WARN	Failed to update system addons: Error: Rejecting updated system add-on set that either could not be downloaded or contained unusable add-ons. (resource://gre/modules/addons/XPIProvider.jsm:3217:13) JS Stack trace: this.XPIProvider.updateSystemAddons<@XPIProvider.jsm:3217:13
+juil. 05, 2017 10:14:24.67 *************************
+juil. 05, 2017 10:14:24.67 A coding exception was thrown and uncaught in a Task.
+juil. 05, 2017 10:14:24.67 
+juil. 05, 2017 10:14:24.67 Full message: TypeError: NetworkError when attempting to fetch resource.
+juil. 05, 2017 10:14:24.67 Full stack: 
+juil. 05, 2017 10:14:24.67 *************************
+juil. 05, 2017 10:16:24.68 1499242584686	addons.xpi	WARN	Add-on web2pdfextension@web2pdf.adobedotcom is not correctly signed.
+juil. 05, 2017 10:34:18.98 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+juil. 05, 2017 10:34:19.02 [GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.

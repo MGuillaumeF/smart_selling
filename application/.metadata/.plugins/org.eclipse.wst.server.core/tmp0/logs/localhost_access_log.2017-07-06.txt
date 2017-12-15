@@ -1,0 +1,14 @@
+127.0.0.1 - - [06/Jul/2017:03:15:55 +0200] "GET / HTTP/1.1" 200 1194
+127.0.0.1 - - [06/Jul/2017:03:16:14 +0200] "GET /Smart_SellingWebApp/Connect HTTP/1.1" 200 56318
+127.0.0.1 - - [06/Jul/2017:03:16:14 +0200] "GET /Smart_SellingWebApp/style/style.css HTTP/1.1" 200 100253
+127.0.0.1 - - [06/Jul/2017:03:16:14 +0200] "GET /Smart_SellingWebApp/script/sendrequest.js HTTP/1.1" 200 7032
+127.0.0.1 - - [06/Jul/2017:03:16:14 +0200] "GET /Smart_SellingWebApp/script/popup.js HTTP/1.1" 200 3371
+127.0.0.1 - - [06/Jul/2017:03:16:14 +0200] "GET /Smart_SellingWebApp/script/sha512.js HTTP/1.1" 200 12816
+127.0.0.1 - - [06/Jul/2017:03:16:18 +0200] "POST /Smart_SellingWebApp/Connect HTTP/1.1" 500 1488
+127.0.0.1 - - [06/Jul/2017:03:19:02 +0200] "GET / HTTP/1.1" 200 1194
+127.0.0.1 - - [06/Jul/2017:03:19:39 +0200] "GET / HTTP/1.1" 200 1194
+127.0.0.1 - - [06/Jul/2017:03:19:58 +0200] "GET /Smart_SellingWebApp/Connect HTTP/1.1" 200 56323
+127.0.0.1 - - [06/Jul/2017:03:20:03 +0200] "POST /Smart_SellingWebApp/Connect HTTP/1.1" 500 1488
+127.0.0.1 - - [06/Jul/2017:03:21:42 +0200] "GET / HTTP/1.1" 200 1194
+127.0.0.1 - - [06/Jul/2017:03:21:50 +0200] "GET /Smart_SellingWebApp/Connect HTTP/1.1" 200 56323
+127.0.0.1 - - [06/Jul/2017:03:21:52 +0200] "POST /Smart_SellingWebApp/Connect HTTP/1.1" 500 1488
