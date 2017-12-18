@@ -23,4 +23,4 @@ Les technologies choisi sont :
 La base de données MySQL
 ![](https://github.com/MGuillaumeF/smart_selling/blob/master/Database.png)
 
-## Sommaire
+Pour plus d'information voir le Wiki
