@@ -1231,3 +1231,25 @@ java.lang.Exception: Could not delete C:\wildfly-10.0.0.Final\standalone\deploym
 
 !ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2017-12-15 00:46:38.441
 !MESSAGE Server processes have been terminated.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-12-18 10:46:03.000
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_121 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-12-18 10:46:04.067
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-12-18 10:46:07.030
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2017-12-18 10:46:07.045
+!MESSAGE Module Smart_SellingWebApp on WildFly 10.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2017-12-18 10:46:27.140
+!MESSAGE Module Smart_SellingWebApp on WildFly 10.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-12-18 10:58:39.774
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2017-12-18 10:58:40.915
+!MESSAGE Server Shutdown Succeeded

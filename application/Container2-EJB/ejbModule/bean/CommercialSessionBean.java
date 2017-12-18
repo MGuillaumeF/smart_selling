@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import javax.annotation.Resource;
-import javax.ejb.EJBContext;
-import javax.ejb.LocalBean;
+//import javax.annotation.Resource;
+//import javax.ejb.EJBContext;
+//import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionManagement;
 import javax.ejb.TransactionManagementType;
@@ -15,22 +15,22 @@ import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
 import javax.naming.InitialContext;
-import javax.naming.NamingException;
+//import javax.naming.NamingException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+//import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
-import javax.transaction.HeuristicMixedException;
-import javax.transaction.HeuristicRollbackException;
-import javax.transaction.NotSupportedException;
-import javax.transaction.RollbackException;
-import javax.transaction.SystemException;
+//import javax.transaction.HeuristicMixedException;
+//import javax.transaction.HeuristicRollbackException;
+//import javax.transaction.NotSupportedException;
+//import javax.transaction.RollbackException;
+//import javax.transaction.SystemException;
 import javax.transaction.UserTransaction;
 
 import manager.EntitiesManagerGestion;
 
-import javax.inject.Inject; 
+//import javax.inject.Inject; 
 
 
 
@@ -310,8 +310,8 @@ public class CommercialSessionBean {
         	JsonObject jsonObject = null;
         	if (client != null) {
         		
-	        	List<LigneLivraison> listLigneLivraisons = null;
-	        	listLigneLivraisons = new ArrayList<LigneLivraison>();
+	        	//List<LigneLivraison> listLigneLivraisons = null;
+	        	//listLigneLivraisons = new ArrayList<LigneLivraison>();
 	        	List<LigneCommande> listLigneCommandes = null;
 	        	listLigneCommandes = new ArrayList<LigneCommande>();
 	        	

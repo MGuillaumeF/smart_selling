@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.json.Json;
-import javax.json.JsonArray;
+//import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import bean.CommercialSessionBean;
-import bean.ConnexionSessionBean;
+//import bean.ConnexionSessionBean;
 
 
 /**

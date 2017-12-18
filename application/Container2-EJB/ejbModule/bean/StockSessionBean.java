@@ -3,7 +3,7 @@ package bean;
 import java.util.Date;
 import java.util.List;
 
-import javax.ejb.LocalBean;
+//import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionManagement;
 import javax.ejb.TransactionManagementType;
@@ -12,7 +12,7 @@ import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
 import javax.naming.InitialContext;
-import javax.naming.NamingException;
+//import javax.naming.NamingException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceContext;

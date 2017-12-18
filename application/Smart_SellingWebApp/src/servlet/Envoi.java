@@ -3,9 +3,9 @@ package servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.json.Json;
-import javax.json.JsonArray;
-import javax.json.JsonArrayBuilder;
+//import javax.json.Json;
+//import javax.json.JsonArray;
+//import javax.json.JsonArrayBuilder;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import bean.CommercialSessionBean;
+//import bean.CommercialSessionBean;
 import bean.StockSessionBean;
 
 /**
