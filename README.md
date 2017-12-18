@@ -20,7 +20,7 @@ Les technologies choisi sont :
 1. Le système d'exploitation : **Ubuntu 16.04LTS**
 
 ## Base de données
-La base de données MySQL
+La base de données MySQL est accessible via une couche de persistance Java qui permet de faire des commit dans la base de données à partir de classes Java représentant les entités de la base de données
 ![](https://github.com/MGuillaumeF/smart_selling/blob/master/Database.png)
 
-Pour plus d'information voir le Wiki
+Pour plus d'informations voir le Wiki
