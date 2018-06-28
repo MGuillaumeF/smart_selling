@@ -1,6 +1,0 @@
-127.0.0.1 - - [04/Jul/2017:01:10:46 +0200] "GET / HTTP/1.1" 200 1194
-127.0.0.1 - - [04/Jul/2017:01:10:52 +0200] "GET /Smart_SellingWebApp/Connect HTTP/1.1" 200 55387
-127.0.0.1 - - [04/Jul/2017:01:10:53 +0200] "GET /Smart_SellingWebApp/style/style.css HTTP/1.1" 200 100253
-127.0.0.1 - - [04/Jul/2017:01:10:53 +0200] "GET /Smart_SellingWebApp/script/sendrequest.js HTTP/1.1" 200 7032
-127.0.0.1 - - [04/Jul/2017:01:10:53 +0200] "GET /Smart_SellingWebApp/script/popup.js HTTP/1.1" 200 3371
-127.0.0.1 - - [04/Jul/2017:01:10:53 +0200] "GET /Smart_SellingWebApp/script/sha512.js HTTP/1.1" 200 12816
