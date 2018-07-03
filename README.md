@@ -23,4 +23,4 @@ Les technologies choisi sont :
 La base de données MySQL est accessible via une couche de persistance Java qui permet de faire des commit dans la base de données à partir de classes Java représentant les entités de la base de données
 ![](https://github.com/MGuillaumeF/smart_selling/blob/master/Database.png)
 
-Pour plus d'informations voir le Wiki
+Pour plus d'informations voir le [Wiki](https://github.com/MGuillaumeF/smart_selling/wiki)
